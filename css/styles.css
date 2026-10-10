@@ -398,6 +398,31 @@ h2 {
 }
 .part strong { font-size: 18px; letter-spacing: -0.02em; }
 
+#reviews { scroll-margin-top: 120px; }
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.quote {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px 16px 14px;
+}
+.quote .stars-base { color: #e4e7ec; }
+.quote .stars-fill { color: #fbbc04; }
+.quote p { margin: 10px 0; }
+.quote footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+.quote-more { justify-self: start; margin-top: 4px; }
+
 .reviews {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -467,7 +492,7 @@ h2 {
     overflow-x: auto;
     padding-bottom: 4px;
   }
-  .hero-grid, .stores, .reviews, .facts, .grid, .clip-grid {
+  .hero-grid, .stores, .reviews, .facts, .grid, .clip-grid, .quote-grid {
     grid-template-columns: 1fr;
   }
   .tiktok-frame { width: min(100%, 420px); justify-self: center; }
