@@ -115,11 +115,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .header-call:hover { background: #ffd84a; }
 
 .hero {
+  position: relative;
+  isolation: isolate;
   background:
-    radial-gradient(900px 420px at 100% -10%, rgba(245, 196, 0, 0.18), transparent 55%),
-    var(--ink);
+    linear-gradient(100deg, rgba(18, 18, 18, 0.9) 0%, rgba(18, 18, 18, 0.72) 28%, rgba(18, 18, 18, 0.22) 52%, rgba(18, 18, 18, 0.08) 100%),
+    url("../img/truck-hero.jpg") 72% 42% / cover no-repeat;
   color: #fff;
-  padding: 64px 0 72px;
+  padding: 64px 0 56px;
+  min-height: 560px;
 }
 .hero-grid {
   display: grid;
@@ -497,7 +500,13 @@ h2 {
   }
   .tiktok-frame { width: min(100%, 420px); justify-self: center; }
   .facts { grid-template-columns: 1fr 1fr; }
-  .hero { padding-top: 36px; }
+  .hero {
+    min-height: 0;
+    padding-top: 36px;
+    background:
+      linear-gradient(180deg, rgba(18, 18, 18, 0.82) 0%, rgba(18, 18, 18, 0.62) 100%),
+      url("../img/truck-hero.jpg") 68% 40% / cover no-repeat;
+  }
   section { padding: 52px 0; }
 }
 
